@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #1a5f4f;
+  --color-secondary: #d4a574;
+  --color-accent: #0d7ea0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @theme inline {
