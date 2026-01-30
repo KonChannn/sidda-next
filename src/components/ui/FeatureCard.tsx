@@ -31,8 +31,8 @@ export default function FeatureCard({
         className
       )}
     >
-      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-800 to-green-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-        <Icon className="w-7 h-7 text-amber-400" />
+      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#153E26] to-[#153E26] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+        <Icon className="w-7 h-7 text-[#D9B26A]" />
       </div>
       <h3 className="text-xl font-semibold text-slate-800 mb-3">{title}</h3>
       <p className="text-slate-600 leading-relaxed">{description}</p>

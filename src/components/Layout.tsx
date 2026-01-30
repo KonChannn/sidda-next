@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Droplets, Phone, MapPin, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -47,18 +48,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Logo */}
             <Link
               href={createPageUrl("Home")}
-              className="flex items-center gap-2 group"
+              className="flex items-center group"
+              aria-label="SIDDA Home"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-800 to-green-700 flex items-center justify-center group-hover:scale-105 transition-transform">
-                <Droplets className="w-6 h-6 text-amber-400" />
-              </div>
-              <span
-                className={`text-2xl font-bold tracking-tight ${
-                  isScrolled ? "text-slate-800" : "text-white"
+              <Image
+                src="/LogoTransparent.png"
+                alt="SIDDA"
+                width={140}
+                height={44}
+                className={`object-contain transition-transform group-hover:scale-105 ${
+                  isScrolled ? "" : "brightness-0 invert" 
                 }`}
-              >
-                SIDDA
-              </span>
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -70,14 +72,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   className={`relative font-medium transition-colors ${
                     isScrolled
                       ? "text-slate-500 hover:text-slate-700"
-                      : "text-slate-300 hover:text-white"
+                      : "text-white/75 hover:text-white/100"
                   } ${currentPageName === link.page ? "text-slate-700" : ""}`}
                 >
                   {link.name}
-                  {currentPageName === link.page && (
+                      {currentPageName === link.page && (
                     <motion.div
                       layoutId="underline"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-green-800 to-amber-600"
+                          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-[#153E26] to-[#C19248]"
                     />
                   )}
                 </Link>
@@ -143,8 +145,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-800 to-green-700 flex items-center justify-center">
-                  <Droplets className="w-6 h-6 text-amber-400" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#153E26] to-[#153E26] flex items-center justify-center">
+                  <Droplets className="w-6 h-6 text-[#D9B26A]" />
                 </div>
                 <span className="text-2xl font-bold">SIDDA</span>
               </div>
@@ -176,7 +178,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="font-semibold text-lg mb-6">Contact Us</h4>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3 text-slate-400">
-                  <Phone className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-[#C19248] shrink-0" />
                   <a
                     href="tel:08778729814"
                     className="hover:text-white transition-colors"
@@ -185,7 +187,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </li>
                 <li className="flex items-center gap-3 text-slate-400">
-                  <Instagram className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                  <Instagram className="w-5 h-5 text-[#C19248] shrink-0" />
                   <a
                     href="https://instagram.com/sidda.id"
                     target="_blank"
@@ -196,7 +198,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </li>
                 <li className="flex items-start gap-3 text-slate-400">
-                  <MapPin className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-[#C19248] shrink-0" />
                   <span>123 Clean Street, Industrial District</span>
                 </li>
               </ul>

@@ -57,30 +57,90 @@ const MILESTONES = [
 export default function AboutPage() {
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-br from-green-900 via-green-800 to-teal-800">
+      {/* Hero + Timeline — single section with consistent spacing */}
+      <section className="relative pt-32 pb-24 bg-gradient-to-b from-[#153E26] via-[#153E26] to-[#153E26]">
         <div className="absolute inset-0">
           <div className="absolute top-40 left-20 w-80 h-80 bg-amber-500/20 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl" />
         </div>
+        <div
+          className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none bg-gradient-to-t from-teal-900 to-transparent"
+          aria-hidden
+        />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              About{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-teal-400">
-                SIDDA
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Hero block */}
+          <div className="text-center max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                About{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#C19248]">
+                  SIDDA
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-blue-100/80 leading-relaxed">
+                We believe that powerful cleaning and environmental responsibility
+                should go hand in hand.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Key Milestones — consistent margin from hero subheader */}
+          <div className="mt-24 max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <span className="text-amber-400 font-semibold text-sm tracking-wider uppercase mb-4 block">
+                Our Journey
               </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-blue-100/80 max-w-3xl mx-auto leading-relaxed">
-              We believe that powerful cleaning and environmental responsibility
-              should go hand in hand.
-            </p>
-          </motion.div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Key Milestones
+              </h2>
+            </motion.div>
+
+            <div className="relative">
+              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 to-teal-500" />
+
+              {MILESTONES.map((milestone, index) => (
+              <motion.div
+                key={milestone.year}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={`relative flex items-center mb-8 ${
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
+              >
+                <div
+                  className={`flex-1 ${
+                    index % 2 === 0
+                      ? "md:text-right md:pr-12"
+                      : "md:text-left md:pl-12"
+                  } pl-12 md:pl-0`}
+                >
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                    <div className="text-amber-400 font-bold text-xl mb-2">
+                      {milestone.year}
+                    </div>
+                    <p className="text-white/80">{milestone.event}</p>
+                  </div>
+                </div>
+
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-gradient-to-br from-amber-400 to-teal-400 rounded-full -translate-x-1/2 border-4 border-slate-900" />
+
+                <div className="flex-1 hidden md:block" />
+              </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -148,6 +208,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      
       {/* Mission & Vision */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,60 +290,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 to-green-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-amber-400 font-semibold text-sm tracking-wider uppercase mb-4 block">
-              Our Journey
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Key Milestones
-            </h2>
-          </motion.div>
-
-          <div className="relative">
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 to-teal-500" />
-
-            {MILESTONES.map((milestone, index) => (
-              <motion.div
-                key={milestone.year}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`relative flex items-center mb-8 ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
-              >
-                <div
-                  className={`flex-1 ${
-                    index % 2 === 0
-                      ? "md:text-right md:pr-12"
-                      : "md:text-left md:pl-12"
-                  } pl-12 md:pl-0`}
-                >
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <div className="text-amber-400 font-bold text-xl mb-2">
-                      {milestone.year}
-                    </div>
-                    <p className="text-white/80">{milestone.event}</p>
-                  </div>
-                </div>
-
-                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-gradient-to-br from-amber-400 to-teal-400 rounded-full -translate-x-1/2 border-4 border-slate-900" />
-
-                <div className="flex-1 hidden md:block" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Commitment */}
       <section className="py-24 bg-white">

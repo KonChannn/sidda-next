@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* Brand palette */
+  --background: #F4F3EF;      /* Primary light background */
   --foreground: #171717;
-  --color-primary: #1a5f4f;
-  --color-secondary: #d4a574;
-  --color-accent: #0d7ea0;
+  --color-primary: #153E26;   /* Primary dark (text/logo) */
+  --color-gold-mid: #C19248;  /* Accent gold (mid-tone) */
+  --color-gold-hi: #D9B26A;   /* Accent gold (highlight) */
+  --color-gold-shadow: #9E7434; /* Accent gold (shadow) */
 }
 
 html {

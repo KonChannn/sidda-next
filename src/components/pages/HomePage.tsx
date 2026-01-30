@@ -65,7 +65,7 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-900 via-green-800 to-teal-800 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#153E26] via-[#153E26] to-[#9E7434] overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -78,7 +78,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-amber-300 text-sm font-medium mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-[#D9B26A] text-sm font-medium mb-8">
               <Droplets className="w-4 h-4" />
               Professional Grade Cleaning
             </span>
@@ -91,7 +91,7 @@ export default function HomePage() {
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Clean Power,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-teal-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#C19248]">
               Safe Formula
             </span>
           </motion.h1>
@@ -115,7 +115,7 @@ export default function HomePage() {
             <Link href={createPageUrl("Products")}>
               <Button
                 size="lg"
-                className="bg-amber-500 text-green-900 hover:bg-amber-400 px-8 py-6 text-lg font-semibold rounded-xl shadow-2xl shadow-amber-500/20 group"
+                className="bg-[#C19248] text-[#153E26] hover:bg-[#9E7434] px-8 py-6 text-lg font-semibold rounded-xl shadow-2xl shadow-[#C19248]/20 group"
               >
                 Explore Products
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -124,7 +124,7 @@ export default function HomePage() {
             <Link href={createPageUrl("Contact")}>
               <Button
                 size="lg"
-                className="bg-amber-500 hover:bg-slate-600 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-2xl transition-colors"
+                className="bg-[#153E26] hover:bg-[#0f2a18] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-2xl transition-colors"
               >
                 Get in Touch
               </Button>
