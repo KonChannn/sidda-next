@@ -10,10 +10,10 @@ import { createPageUrl, getPageNameFromPath } from "@/lib/utils";
 import type { PageName } from "@/lib/utils";
 
 const NAV_LINKS: { name: string; page: PageName }[] = [
-  { name: "Home", page: "Home" },
-  { name: "Products", page: "Products" },
-  { name: "About Us", page: "About" },
-  { name: "Contact", page: "Contact" },
+  { name: "Beranda", page: "Home" },
+  { name: "Produk", page: "Products" },
+  { name: "Tentang Kami", page: "About" },
+  { name: "Kontak", page: "Contact" },
 ];
 
 export default function Navbar() {

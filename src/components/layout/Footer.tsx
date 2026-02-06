@@ -5,10 +5,10 @@ import { createPageUrl } from "@/lib/utils";
 import type { PageName } from "@/lib/utils";
 
 const NAV_LINKS: { name: string; page: PageName }[] = [
-  { name: "Home", page: "Home" },
-  { name: "Products", page: "Products" },
-  { name: "About Us", page: "About" },
-  { name: "Contact", page: "Contact" },
+  { name: "Beranda", page: "Home" },
+  { name: "Produk", page: "Products" },
+  { name: "Tentang Kami", page: "About" },
+  { name: "Kontak", page: "Contact" },
 ];
 
 export default function Footer() {
@@ -27,15 +27,15 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-[#C0B9A0] leading-relaxed text-sm">
-              High-performance, eco-friendly dishwashing solution for
-              professionals and households.
+              Solusi cairan pencuci piring berkinerja tinggi dan ramah
+              lingkungan untuk profesional maupun rumah tangga.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-sm tracking-[0.2em] uppercase mb-6 text-[#F4F3EF]">
-              Quick Links
+              Tautan Cepat
             </h4>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
@@ -54,7 +54,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-sm tracking-[0.2em] uppercase mb-6 text-[#F4F3EF]">
-              Contact Us
+              Hubungi Kami
             </h4>
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-[#C0B9A0]">
@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-[#C0B9A0]">
                 <MapPin className="w-5 h-5 text-[#C19248] shrink-0" />
-                <span>123 Clean Street, Industrial District</span>
+                <span>Jalan Bersih No. 123, Kawasan Industri</span>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Social */}
           <div>
             <h4 className="font-semibold text-sm tracking-[0.2em] uppercase mb-6 text-[#F4F3EF]">
-              Follow Us
+              Ikuti Kami
             </h4>
             <div className="flex gap-4">
               <a
@@ -110,10 +110,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#2A261C] mt-12 pt-8 text-center text-[#807660] text-xs tracking-[0.16em] uppercase">
-          <p>
-            &copy; {new Date().getFullYear()} SIDDA. All rights reserved.
-          </p>
+          <div className="border-t border-[#2A261C] mt-12 pt-8 text-center text-[#807660] text-xs tracking-[0.16em] uppercase">
+            <p>
+              &copy; {new Date().getFullYear()} SIDDA. Seluruh hak cipta
+              dilindungi.
+            </p>
         </div>
       </div>
     </footer>

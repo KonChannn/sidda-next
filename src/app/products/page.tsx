@@ -3,9 +3,9 @@ import { buildPageMetadata } from "@/lib/metadata";
 import ProductsPage from "@/components/pages/ProductsPage";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Products",
+  title: "Produk",
   description:
-    "SIDDA 5L professional dishwashing liquid. One-wash power, biodegradable, skin-safe. Specifications, benefits, and bulk order options for restaurants and kitchens.",
+    "SIDDA 5L cairan pencuci piring profesional. Bersih sekali cuci, biodegradabel, aman untuk kulit. Spesifikasi, keunggulan, dan opsi pemesanan besar untuk restoran dan dapur.",
   path: "/products",
 });
 

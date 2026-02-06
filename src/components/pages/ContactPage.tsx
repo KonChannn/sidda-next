@@ -21,7 +21,7 @@ const CONTACT_INFO: {
 }[] = [
   {
     icon: Phone,
-    title: "Phone",
+    title: "Telepon",
     details: ["08778729814"],
     href: "tel:08778729814",
   },
@@ -38,32 +38,32 @@ const CONTACT_INFO: {
   },
   {
     icon: MapPin,
-    title: "Address",
-    details: ["123 Clean Street", "Industrial District, NY 10001"],
+    title: "Alamat",
+    details: ["Jalan Bersih No. 123", "Kawasan Industri, NY 10001"],
   },
   {
     icon: Clock,
-    title: "Business Hours",
-    details: ["Monday - Friday: 8AM - 6PM", "Saturday: 9AM - 2PM"],
+    title: "Jam Operasional",
+    details: ["Senin - Jumat: 08.00 - 18.00", "Sabtu: 09.00 - 14.00"],
   },
 ];
 
 const FAQ_ITEMS = [
   {
-    q: "What is the minimum order quantity?",
-    a: "For individual purchases, there's no minimum. For wholesale orders, the minimum is 10 units (50 liters total).",
+    q: "Berapa minimum pemesanan?",
+    a: "Untuk pembelian eceran tidak ada minimum. Untuk pembelian grosir, minimum pemesanan adalah 10 unit (total 50 liter).",
   },
   {
-    q: "Do you offer international shipping?",
-    a: "Yes, we ship to most countries worldwide. Shipping costs and delivery times vary by location.",
+    q: "Apakah SIDDA melayani pengiriman internasional?",
+    a: "Ya, kami mengirim ke banyak negara di seluruh dunia. Biaya dan estimasi waktu pengiriman menyesuaikan dengan lokasi.",
   },
   {
-    q: "Is SIDDA safe for septic systems?",
-    a: "Absolutely! Our biodegradable formula is completely safe for all septic systems and water treatment facilities.",
+    q: "Apakah SIDDA aman untuk sistem septik?",
+    a: "Tentu saja! Formula biodegradabel kami aman digunakan untuk semua sistem septik dan instalasi pengolahan air.",
   },
   {
-    q: "How long does shipping take?",
-    a: "Domestic orders typically arrive within 3-5 business days. International orders may take 7-14 business days.",
+    q: "Berapa lama waktu pengiriman?",
+    a: "Untuk pengiriman dalam negeri, pesanan biasanya tiba dalam 3–5 hari kerja. Pengiriman internasional dapat memakan waktu 7–14 hari kerja.",
   },
 ];
 
@@ -85,13 +85,13 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#171717] mb-6 tracking-[0.12em] uppercase">
-              Get in{" "}
+              Hubungi{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#9E7434]">
-                Touch
+                Kami
               </span>
             </h1>
             <p className="text-lg md:text-xl text-[#4B4635] max-w-3xl mx-auto leading-relaxed">
-              Have questions or ready to order? We&apos;d love to hear from you.
+              Punya pertanyaan atau siap untuk memesan? Kami siap membantu Anda.
             </p>
           </motion.div>
         </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
             className="max-w-2xl mx-auto"
           >
             <h2 className="text-2xl font-bold text-[#171717] mb-8 text-center">
-              Contact Information
+              Informasi Kontak
             </h2>
 
             <div className="space-y-8">
@@ -151,9 +151,9 @@ export default function ContactPage() {
       <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Common Questions"
-            title="Frequently Asked"
-            description="Quick answers to questions we hear often."
+            subtitle="Pertanyaan Umum"
+            title="Yang Sering Ditanyakan"
+            description="Jawaban singkat untuk pertanyaan yang paling sering kami terima."
           />
 
           <div className="space-y-4">

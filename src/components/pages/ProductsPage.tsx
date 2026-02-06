@@ -23,64 +23,64 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const BENEFITS = [
   {
     icon: Zap,
-    title: "One-Wash Power",
+    title: "Bersih Sekali Cuci",
     description:
-      "Cuts through the toughest oil, grease, and fishy odors in a single wash.",
+      "Mengangkat minyak, lemak, dan bau amis paling bandel hanya dalam satu kali cuci.",
   },
   {
     icon: Clock,
-    title: "Time Saving",
+    title: "Hemat Waktu",
     description:
-      "No repeated scrubbing needed—save valuable time during peak hours.",
+      "Tanpa perlu menggosok berulang—menghemat waktu berharga di jam-jam sibuk.",
   },
   {
     icon: Leaf,
-    title: "Biodegradable",
+    title: "Biodegradabel",
     description:
-      "Environmentally responsible formula that breaks down naturally.",
+      "Formula yang ramah lingkungan dan mudah terurai secara alami.",
   },
   {
     icon: Shield,
-    title: "Skin Safe",
+    title: "Aman untuk Kulit",
     description:
-      "Gentle enough for all-day use without irritation or dryness.",
+      "Cukup lembut untuk digunakan sepanjang hari tanpa membuat kulit kering atau iritasi.",
   },
   {
     icon: Sparkles,
-    title: "Streak-Free Shine",
+    title: "Bersih Berkilau",
     description:
-      "Leaves dishes sparkling clean without residue or film.",
+      "Meninggalkan piring bersih berkilau tanpa bekas sabun atau lapisan buram.",
   },
   {
     icon: Beaker,
-    title: "No Harsh Chemicals",
+    title: "Tanpa Bahan Kimia Keras",
     description:
-      "Free from parabens, phosphates, and synthetic irritants.",
+      "Bebas paraben, fosfat, dan zat iritan sintetis lainnya.",
   },
 ];
 
 const SPECIFICATIONS = [
-  { label: "Volume", value: "5 Liters" },
-  { label: "Packaging", value: "HDPE Jerrycan" },
-  { label: "pH Level", value: "Neutral (6.5-7.5)" },
-  { label: "Fragrance", value: "Fresh Citrus" },
-  { label: "Shelf Life", value: "24 Months" },
-  { label: "Certification", value: "Eco-Certified" },
+  { label: "Volume", value: "5 Liter" },
+  { label: "Kemasan", value: "Jerigen HDPE" },
+  { label: "Tingkat pH", value: "Netral (6,5–7,5)" },
+  { label: "Aroma", value: "Jeruk Segar" },
+  { label: "Masa Simpan", value: "24 Bulan" },
+  { label: "Sertifikasi", value: "Eco-Certified" },
 ];
 
 const IDEAL_FOR = [
-  "Professional Restaurants",
-  "Catering Services",
-  "Hotel Kitchens",
-  "Food Processing Plants",
-  "Modern Households",
-  "Cafeterias & Canteens",
+  "Restoran Profesional",
+  "Jasa Katering",
+  "Dapur Hotel",
+  "Pabrik Pengolahan Makanan",
+  "Rumah Tangga Modern",
+  "Kantin & Kafetaria",
 ];
 
 const SAFETY_ITEMS = [
-  { title: "No Parabens", desc: "Free from harmful preservatives" },
-  { title: "No Phosphates", desc: "Environmentally responsible" },
-  { title: "No Harsh Chemicals", desc: "Safe for daily use" },
+  { title: "Tanpa Paraben", desc: "Bebas bahan pengawet berbahaya" },
+  { title: "Tanpa Fosfat", desc: "Lebih bertanggung jawab terhadap lingkungan" },
+  { title: "Tanpa Bahan Kimia Keras", desc: "Aman untuk penggunaan harian" },
 ];
 
 export default function ProductsPage() {
@@ -102,7 +102,7 @@ export default function ProductsPage() {
               transition={{ duration: 0.6 }}
             >
               <Badge className="bg-white/60 text-[#9E7434] border-[#D9B26A]/40 mb-6 tracking-[0.25em] uppercase">
-                Professional Grade
+                Kelas Profesional
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#171717] mb-6 leading-tight tracking-[0.12em] uppercase">
                 SIDDA 5L{" "}
@@ -111,15 +111,16 @@ export default function ProductsPage() {
                 </span>
               </h1>
               <p className="text-lg text-[#4B4635] mb-8 leading-relaxed">
-                High-performance cleaning power engineered for demanding
-                environments. Tough on grease, gentle on everything else.
+                Daya bersih tinggi yang dirancang untuk kebutuhan dapur dengan
+                beban kerja berat. Sangat ampuh melawan lemak, tetap lembut
+                untuk yang lainnya.
               </p>
               <Link href={createPageUrl("Contact")}>
                 <Button
                   size="lg"
                   className="bg-[#171717] text-[#F4F3EF] hover:bg-black px-10 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-black/20 border border-[#D9B26A]/60 group"
                 >
-                  Order Now
+                  Pesan Sekarang
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -155,9 +156,9 @@ export default function ProductsPage() {
       <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Key Benefits"
-            title="Why Professionals Choose SIDDA"
-            description="Every bottle is engineered to deliver exceptional results while maintaining the highest safety standards."
+            subtitle="Keunggulan Utama"
+            title="Mengapa Profesional Memilih SIDDA"
+            description="Setiap botol dirancang untuk memberikan hasil maksimal sekaligus memenuhi standar keselamatan tertinggi."
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -201,7 +202,7 @@ export default function ProductsPage() {
               <div className="flex items-center gap-3 mb-8">
                 <Package className="w-6 h-6 text-[#9E7434]" />
                 <h2 className="text-3xl font-bold text-[#171717]">
-                  Product Specifications
+                  Spesifikasi Produk
                 </h2>
               </div>
 
@@ -232,7 +233,9 @@ export default function ProductsPage() {
             >
               <div className="flex items-center gap-3 mb-8">
                 <Sparkles className="w-6 h-6 text-[#D9B26A]" />
-                <h2 className="text-3xl font-bold text-[#171717]">Ideal For</h2>
+                <h2 className="text-3xl font-bold text-[#171717]">
+                  Cocok Untuk
+                </h2>
               </div>
 
               <div className="bg-white rounded-2xl shadow-sm border border-[#E0D4BF] p-8">
@@ -248,18 +251,18 @@ export default function ProductsPage() {
 
               <div className="mt-8 p-6 bg-[#171717] rounded-2xl text-[#F4F3EF] border border-[#2A261C]">
                 <h3 className="text-xl font-semibold mb-3">
-                  Bulk Orders Available
+                  Tersedia Pemesanan Besar
                 </h3>
                 <p className="text-[#C0B9A0] mb-4">
-                  Special pricing for large orders. Contact us for wholesale
-                  inquiries.
+                  Harga spesial untuk pemesanan dalam jumlah besar. Hubungi kami
+                  untuk informasi grosir.
                 </p>
                 <Link href={createPageUrl("Contact")}>
                   <Button
                     variant="secondary"
                     className="bg-[#F4F3EF] text-[#171717] hover:bg-white border border-[#D9B26A]"
                   >
-                    Request Quote
+                    Minta Penawaran
                   </Button>
                 </Link>
               </div>
@@ -272,11 +275,11 @@ export default function ProductsPage() {
       <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <SectionHeading
-              subtitle="Safety First"
-              title="What's NOT in SIDDA"
-              description="We believe powerful cleaning shouldn't come at the cost of safety. Here's what we've deliberately left out."
-            />
+          <SectionHeading
+            subtitle="Keamanan Nomor Satu"
+            title="Apa yang TIDAK Ada di SIDDA"
+            description="Kami percaya kekuatan bersih tidak boleh mengorbankan keselamatan. Inilah bahan-bahan yang sengaja kami hilangkan."
+          />
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -312,18 +315,18 @@ export default function ProductsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-[0.12em] uppercase">
-              Ready to Upgrade Your Cleaning Routine?
+              Siap Meningkatkan Rutinitas Kebersihan Anda?
             </h2>
             <p className="text-xl text-white/75 mb-10">
-              Experience the SIDDA difference. Contact us today for orders and
-              inquiries.
+              Rasakan perbedaan SIDDA. Hubungi kami hari ini untuk pemesanan
+              dan pertanyaan lebih lanjut.
             </p>
             <Link href={createPageUrl("Contact")}>
               <Button
                 size="lg"
                 className="bg-[#F4F3EF] text-[#171717] hover:bg-white px-10 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-black/30 border border-[#D9B26A]/70"
               >
-                Contact Sales Team
+                Hubungi Tim Penjualan
               </Button>
             </Link>
           </motion.div>

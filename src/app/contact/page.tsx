@@ -3,9 +3,9 @@ import { buildPageMetadata } from "@/lib/metadata";
 import ContactPage from "@/components/pages/ContactPage";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact",
+  title: "Kontak",
   description:
-    "Get in touch with SIDDA. Questions, orders, or wholesale inquiries. We respond within 24 hours. Phone, email, and contact form.",
+    "Hubungi SIDDA untuk pertanyaan, pemesanan, atau informasi grosir. Kami merespons dalam 24 jam. Tersedia kontak telepon, email, dan formulir.",
   path: "/contact",
 });
 

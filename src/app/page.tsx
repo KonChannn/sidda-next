@@ -5,7 +5,7 @@ import HomePage from "@/components/pages/HomePage";
 export const metadata: Metadata = buildPageMetadata({
   title: "SIDDA",
   description:
-    "High-performance dishwashing liquid that's tough on grease, gentle on skin, and kind to the planet. Professional-grade cleaning for restaurants, kitchens, and households.",
+    "Cairan pencuci piring berkinerja tinggi yang sangat ampuh melawan lemak, lembut di kulit, dan lebih ramah lingkungan. Kebersihan kelas profesional untuk restoran, dapur, dan rumah tangga.",
   path: "/",
 });
 

@@ -23,42 +23,42 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const FEATURES = [
   {
     icon: Zap,
-    title: "Powerful Cleaning",
+    title: "Daya Bersih Maksimal",
     description:
-      "Cuts through oil, grease, and fishy odors in one wash. No repeated scrubbing needed.",
+      "Mengangkat minyak, lemak, dan bau amis hanya dalam satu kali cuci. Tidak perlu menggosok berulang-ulang.",
   },
   {
     icon: Leaf,
-    title: "Eco-Friendly Formula",
+    title: "Formula Ramah Lingkungan",
     description:
-      "Biodegradable ingredients that are safe for the environment without compromising performance.",
+      "Bahan yang mudah terurai dan aman bagi lingkungan tanpa mengorbankan kualitas pencucian.",
   },
   {
     icon: Shield,
-    title: "Skin Safe",
+    title: "Aman untuk Kulit",
     description:
-      "No parabens, phosphates, or harsh chemicals. Gentle enough for all-day use.",
+      "Tanpa paraben, fosfat, atau bahan kimia keras. Lembut untuk tangan meski digunakan sepanjang hari.",
   },
   {
     icon: Clock,
-    title: "Time Efficient",
+    title: "Hemat Waktu & Tenaga",
     description:
-      "Save time, water, and effort during peak hours with our fast-acting formula.",
+      "Menghemat waktu, air, dan tenaga di jam-jam sibuk dengan formula yang bekerja cepat.",
   },
 ];
 
 const STATS = [
-  { value: "5L", label: "Jerrycan Size" },
-  { value: "100%", label: "Biodegradable" },
-  { value: "1", label: "Wash Needed" },
-  { value: "0", label: "Harsh Chemicals" },
+  { value: "5L", label: "Ukuran Jerigen" },
+  { value: "100%", label: "Biodegradabel" },
+  { value: "1", label: "Kali Cuci" },
+  { value: "0", label: "Bahan Kimia Keras" },
 ];
 
 const FLAGSHIP_BULLETS = [
-  "Cuts through oil and grease instantly",
-  "Eliminates fishy and stubborn odors",
-  "Biodegradable and eco-friendly",
-  "Dermatologically tested formula",
+  "Langsung melarutkan minyak dan lemak membandel",
+  "Menghilangkan bau amis dan bau tak sedap",
+  "Biodegradabel dan ramah lingkungan",
+  "Formula telah diuji secara dermatologis",
 ];
 
 export default function HomePage() {
@@ -80,7 +80,7 @@ export default function HomePage() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm text-[#9E7434] text-xs tracking-[0.25em] font-semibold mb-8 uppercase">
               <Droplets className="w-4 h-4" />
-              Professional Grade Cleaning
+              Kebersihan Kelas Profesional
             </span>
           </motion.div>
 
@@ -90,9 +90,9 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#171717] mb-6 leading-tight tracking-[0.12em] uppercase"
           >
-            Clean Power,{" "}
+            Daya Bersih,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#9E7434]">
-              Safe Formula
+              Formula Aman
             </span>
           </motion.h1>
 
@@ -102,8 +102,8 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-[#4B4635] max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            High-performance dishwashing liquid that&apos;s tough on grease,
-            gentle on skin, and kind to the planet.
+            Cairan pencuci piring berkinerja tinggi yang sangat ampuh mengangkat
+            lemak, tetap lembut di kulit, dan lebih bersahabat bagi lingkungan.
           </motion.p>
 
           <motion.div
@@ -117,7 +117,7 @@ export default function HomePage() {
                 size="lg"
                 className="bg-[#171717] text-[#F4F3EF] hover:bg-black px-10 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-black/20 border border-[#D9B26A]/60 group"
               >
-                Explore Products
+                Lihat Produk
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
@@ -127,7 +127,7 @@ export default function HomePage() {
                 variant="outline"
                 className="bg-[#171717] text-[#F4F3EF] hover:bg-black px-10 py-6 text-lg font-semibold rounded-full backdrop-blur-sm"
               >
-                Get in Touch
+                Hubungi Kami
               </Button>
             </Link>
           </motion.div>
@@ -179,9 +179,9 @@ export default function HomePage() {
       <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Why Choose SIDDA"
-            title="Performance Meets Safety"
-            description="Designed for professionals who demand both power and responsibility in their cleaning products."
+            subtitle="Mengapa Memilih SIDDA"
+            title="Performa Tinggi, Tetap Aman"
+            description="Diformulasikan untuk profesional yang menuntut kekuatan bersih maksimal sekaligus tanggung jawab terhadap kesehatan dan lingkungan."
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -209,14 +209,14 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-[#9E7434] font-semibold text-xs tracking-[0.25em] uppercase mb-4 block">
-                Our Flagship Product
+                Produk Unggulan Kami
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-[#171717] tracking-[0.08em] uppercase">
-                5-Liter Professional Jerrycan
+                Jerigen Profesional 5 Liter
               </h2>
               <p className="text-lg text-[#4B4635] mb-8 leading-relaxed">
-                Perfect for restaurants, catering services, professional
-                kitchens, and modern households that demand the best.
+                Ideal untuk restoran, jasa katering, dapur profesional, dan
+                rumah tangga modern yang menuntut hasil terbaik.
               </p>
 
               <ul className="space-y-4 mb-10">
@@ -233,7 +233,7 @@ export default function HomePage() {
                   size="lg"
                   className="bg-[#171717] text-[#F4F3EF] hover:bg-black px-10 py-6 text-lg font-semibold rounded-full shadow-xl shadow-black/20 border border-[#D9B26A]/60 group"
                 >
-                  View Product Details
+                  Lihat Detail Produk
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -289,9 +289,9 @@ export default function HomePage() {
               ))}
             </div>
             <blockquote className="text-2xl md:text-3xl font-medium text-[#3E3A2C] mb-8 leading-relaxed">
-              &quot;SIDDA has transformed our kitchen operations. One wash is
-              truly all it takes, and our staff loves how gentle it is on their
-              hands even after a full shift.&quot;
+              &quot;SIDDA benar-benar mengubah cara kerja dapur kami. Satu kali
+              cuci sudah cukup, dan staf kami menyukai betapa lembutnya di
+              tangan meski dipakai sepanjang shift.&quot;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-14 h-14 rounded-full bg-[#171717] flex items-center justify-center text-white font-bold text-xl">
@@ -302,7 +302,7 @@ export default function HomePage() {
                   Marco Rodriguez
                 </div>
                 <div className="text-[#6B6450]">
-                  Head Chef, The Grand Kitchen
+                  Kepala Koki, The Grand Kitchen
                 </div>
               </div>
             </div>
@@ -320,18 +320,18 @@ export default function HomePage() {
           >
             <Heart className="w-12 h-12 text-white/80 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-[0.12em] uppercase">
-              Ready to Experience the Difference?
+              Siap Merasakan Perbedaannya?
             </h2>
             <p className="text-xl text-white/75 mb-10 max-w-2xl mx-auto">
-              Join thousands of professionals who trust SIDDA for their daily
-              cleaning needs.
+              Bergabunglah dengan ribuan profesional yang telah mempercayakan
+              kebutuhan kebersihan hariannya kepada SIDDA.
             </p>
             <Link href={createPageUrl("Contact")}>
               <Button
                 size="lg"
                 className="bg-[#F4F3EF] text-[#171717] hover:bg-[#F4F3EF] px-10 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-black/30 border border-[#D9B26A]/70"
               >
-                Contact Us Today
+                Hubungi Kami Hari Ini
               </Button>
             </Link>
           </motion.div>

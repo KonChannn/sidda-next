@@ -22,36 +22,51 @@ import type { LucideIcon } from "lucide-react";
 const VALUES: { icon: LucideIcon; title: string; description: string }[] = [
   {
     icon: Shield,
-    title: "Safety First",
+    title: "Keamanan Utama",
     description:
-      "Every formula we create prioritizes the health and safety of users and the environment.",
+      "Setiap formula yang kami kembangkan mengutamakan kesehatan dan keselamatan pengguna sekaligus lingkungan.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Inovasi",
     description:
-      "We continuously research and develop better, more effective cleaning solutions.",
+      "Kami terus meneliti dan mengembangkan solusi pembersih yang lebih baik dan lebih efektif.",
   },
   {
     icon: Leaf,
-    title: "Sustainability",
+    title: "Keberlanjutan",
     description:
-      "Our commitment to biodegradable ingredients reflects our responsibility to the planet.",
+      "Komitmen kami pada bahan-bahan biodegradabel adalah wujud tanggung jawab kami terhadap bumi.",
   },
   {
     icon: Users,
-    title: "Customer Focus",
+    title: "Fokus pada Pelanggan",
     description:
-      "We listen to professionals and households to create products that truly solve their problems.",
+      "Kami mendengarkan kebutuhan profesional dan rumah tangga untuk menciptakan produk yang benar-benar menjawab masalah mereka.",
   },
 ];
 
 const MILESTONES = [
-  { year: "2015", event: "SIDDA founded with a vision for safer cleaning" },
-  { year: "2017", event: "Launched our first biodegradable formula" },
-  { year: "2019", event: "Expanded to serve 500+ professional kitchens" },
-  { year: "2021", event: "Achieved eco-certification for all products" },
-  { year: "2023", event: "Reached 1,000+ satisfied business clients" },
+  {
+    year: "2015",
+    event: "SIDDA didirikan dengan visi menghadirkan kebersihan yang lebih aman",
+  },
+  {
+    year: "2017",
+    event: "Meluncurkan formula biodegradabel pertama kami",
+  },
+  {
+    year: "2019",
+    event: "Bertumbuh melayani 500+ dapur profesional",
+  },
+  {
+    year: "2021",
+    event: "Seluruh produk meraih sertifikasi ramah lingkungan",
+  },
+  {
+    year: "2023",
+    event: "Mencapai lebih dari 1.000 klien bisnis yang puas",
+  },
 ];
 
 export default function AboutPage() {
@@ -74,14 +89,14 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#171717] mb-6 tracking-[0.12em] uppercase">
-                About{" "}
+                Tentang{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#9E7434]">
                   SIDDA
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-[#4B4635] leading-relaxed">
-                We believe that powerful cleaning and environmental responsibility
-                should go hand in hand.
+                Kami percaya bahwa kekuatan bersih maksimal dan tanggung jawab
+                terhadap lingkungan harus berjalan beriringan.
               </p>
             </motion.div>
           </div>
@@ -95,10 +110,10 @@ export default function AboutPage() {
               className="text-center mb-16"
             >
               <span className="text-[#9E7434] font-semibold text-xs tracking-[0.25em] uppercase mb-4 block">
-                Our Journey
+                Perjalanan Kami
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#171717] tracking-[0.08em] uppercase">
-                Key Milestones
+                Tonggak Penting
               </h2>
             </motion.div>
 
@@ -151,28 +166,30 @@ export default function AboutPage() {
               viewport={{ once: true }}
             >
               <span className="text-[#9E7434] font-semibold text-sm tracking-[0.25em] uppercase mb-4 block">
-                Our Story
+                Kisah Kami
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#171717] mb-6 tracking-[0.08em] uppercase">
-                Born from a Simple Question
+                Berawal dari Satu Pertanyaan Sederhana
               </h2>
               <div className="space-y-4 text-lg text-[#4B4635] leading-relaxed">
                 <p>
-                  Why should professional kitchens have to choose between
-                  effective cleaning and the safety of their staff? This question
-                  sparked the creation of SIDDA.
+                  Mengapa dapur profesional harus memilih antara hasil bersih
+                  yang maksimal atau keselamatan tim mereka? Pertanyaan inilah
+                  yang memicu lahirnya SIDDA.
                 </p>
                 <p>
-                  We saw kitchen workers dealing with harsh chemicals that dried
-                  out their skin, restaurants struggling with products that
-                  couldn&apos;t handle heavy grease, and an industry that had
-                  accepted these compromises as normal.
+                  Kami melihat banyak pekerja dapur bergulat dengan bahan kimia
+                  keras yang membuat kulit kering, restoran yang kesulitan
+                  dengan produk yang tak mampu menaklukkan lemak berat, dan
+                  sebuah industri yang sudah menganggap kompromi ini sebagai
+                  hal biasa.
                 </p>
                 <p>
-                  SIDDA was founded to challenge that status quo. We assembled a
-                  team of chemists and industry experts to develop a formula that
-                  delivers professional-grade cleaning power while being gentle
-                  enough for all-day use.
+                  SIDDA didirikan untuk menantang kondisi tersebut. Kami
+                  mengumpulkan tim kimiawan dan praktisi industri untuk
+                  mengembangkan formula yang memberikan daya bersih setara
+                  profesional, namun tetap lembut untuk penggunaan sepanjang
+                  hari.
                 </p>
               </div>
             </motion.div>
@@ -220,12 +237,12 @@ export default function AboutPage() {
                 <Target className="w-8 h-8 text-amber-400" />
               </div>
               <h3 className="text-2xl font-bold text-[#171717] mb-4">
-                Our Mission
+                Misi Kami
               </h3>
               <p className="text-lg text-[#4B4635] leading-relaxed">
-                To provide high-performance cleaning solutions that protect both
-                people and the planet, making professional-grade hygiene
-                accessible and sustainable for everyone.
+                Menyediakan solusi kebersihan berkinerja tinggi yang melindungi
+                manusia dan bumi, sehingga standar kebersihan profesional dapat
+                diakses dan berkelanjutan bagi semua.
               </p>
             </motion.div>
 
@@ -240,12 +257,12 @@ export default function AboutPage() {
                 <Eye className="w-8 h-8 text-amber-400" />
               </div>
               <h3 className="text-2xl font-bold text-[#171717] mb-4">
-                Our Vision
+                Visi Kami
               </h3>
               <p className="text-lg text-[#4B4635] leading-relaxed">
-                To be the global leader in eco-friendly cleaning products,
-                setting the standard for how the industry approaches safety,
-                effectiveness, and environmental responsibility.
+                Menjadi pemimpin global dalam produk pembersih ramah
+                lingkungan, dan menjadi standar baru dalam hal keamanan,
+                efektivitas, serta tanggung jawab terhadap lingkungan.
               </p>
             </motion.div>
           </div>
@@ -256,9 +273,9 @@ export default function AboutPage() {
       <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="What We Stand For"
-            title="Our Core Values"
-            description="These principles guide every decision we make and every product we create."
+            subtitle="Nilai yang Kami Pegang"
+            title="Nilai Inti SIDDA"
+            description="Prinsip-prinsip ini membimbing setiap keputusan dan setiap produk yang kami hadirkan."
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -300,20 +317,21 @@ export default function AboutPage() {
             >
               <Award className="w-16 h-16 text-[#9E7434] mx-auto mb-8" />
               <h2 className="text-3xl md:text-4xl font-bold text-[#171717] mb-6">
-                Our Commitment to You
+                Komitmen Kami untuk Anda
               </h2>
               <p className="text-xl text-[#4B4635] leading-relaxed mb-10">
-                We promise to never compromise on quality or safety. Every
-                bottle of SIDDA that leaves our facility has been tested to meet
-                the highest standards of performance and safety. Your trust is
-                our most valuable asset.
+                Kami berjanji untuk tidak pernah berkompromi pada kualitas dan
+                keamanan. Setiap botol SIDDA yang keluar dari fasilitas kami
+                telah diuji untuk memenuhi standar tertinggi performa dan
+                keselamatan. Kepercayaan Anda adalah aset paling berharga bagi
+                kami.
               </p>
               <Link href={createPageUrl("Contact")}>
                 <Button
                   size="lg"
                   className="bg-[#171717] text-[#F4F3EF] hover:bg-black px-10 py-6 text-lg font-semibold rounded-full shadow-xl shadow-black/20 border border-[#D9B26A]/60 group"
                 >
-                  Get in Touch
+                  Hubungi Kami
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

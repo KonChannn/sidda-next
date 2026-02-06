@@ -3,9 +3,9 @@ import { buildPageMetadata } from "@/lib/metadata";
 import AboutPage from "@/components/pages/AboutPage";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About Us",
+  title: "Tentang Kami",
   description:
-    "Learn about SIDDA: our story, mission, vision, and core values. We believe powerful cleaning and environmental responsibility go hand in hand.",
+    "Kenali SIDDA: kisah, misi, visi, dan nilai inti kami. Kami percaya kekuatan bersih maksimal dan tanggung jawab lingkungan harus berjalan beriringan.",
   path: "/about",
 });
 
