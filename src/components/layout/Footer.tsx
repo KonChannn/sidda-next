@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Droplets, Phone, MapPin, Instagram } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, Instagram } from "lucide-react";
 import { createPageUrl } from "@/lib/utils";
 import type { PageName } from "@/lib/utils";
 
@@ -19,12 +20,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-linear-to-br from-[#D9B26A] to-[#9E7434] flex items-center justify-center shadow-lg shadow-black/40">
-                <Droplets className="w-6 h-6 text-[#171717]" />
-              </div>
-              <span className="text-2xl font-bold tracking-[0.2em] uppercase">
-                SIDDA
-              </span>
+              <Image
+                src="/LogoTransparent.png"
+                alt="SIDDA"
+                width={140}
+                height={44}
+                className="object-contain"
+              />
             </div>
             <p className="text-[#C0B9A0] leading-relaxed text-sm">
               Solusi cairan pencuci piring berkinerja tinggi dan ramah
@@ -77,9 +79,14 @@ export default function Footer() {
                   @sidda.id
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-[#C0B9A0]">
-                <MapPin className="w-5 h-5 text-[#C19248] shrink-0" />
-                <span>Jalan Bersih No. 123, Kawasan Industri</span>
+              <li className="flex items-center gap-3 text-[#C0B9A0]">
+                <Mail className="w-5 h-5 text-[#C19248] shrink-0" />
+                <a
+                  href="mailto:Siddaindonesia@gmail.com"
+                  className="hover:text-white transition-colors"
+                >
+                  Siddaindonesia@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -98,13 +105,6 @@ export default function Footer() {
                 aria-label="Instagram @sidda.id"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="tel:08778729814"
-                className="w-10 h-10 rounded-full bg-[#2A261C] flex items-center justify-center hover:bg-[#D9B26A] hover:text-[#171717] transition-colors border border-[#403829]"
-                aria-label="Call 08778729814"
-              >
-                <Phone className="w-5 h-5" />
               </a>
             </div>
           </div>

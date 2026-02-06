@@ -34,7 +34,7 @@ const CONTACT_INFO: {
   {
     icon: Mail,
     title: "Email",
-    details: ["info@sidda.com", "sales@sidda.com"],
+    details: ["Siddaindonesia@gmail.com"],
   },
   {
     icon: MapPin,
