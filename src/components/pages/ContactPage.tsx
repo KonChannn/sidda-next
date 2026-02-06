@@ -71,10 +71,11 @@ export default function ContactPage() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#153E26] via-[#153E26] to-[#9E7434]">
+      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#F4F3EF] via-[#F4F3EF] to-[#E6D8C2] overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-40 right-20 w-80 h-80 bg-amber-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-[-4rem] w-80 h-80 bg-[#D9B26A]/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-[-3rem] right-[-4rem] w-[26rem] h-[26rem] bg-[#C19248]/15 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] border border-[#D9B26A]/30 rounded-full" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -83,13 +84,13 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#171717] mb-6 tracking-[0.12em] uppercase">
               Get in{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#C19248]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#9E7434]">
                 Touch
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-green-100/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-[#4B4635] max-w-3xl mx-auto leading-relaxed">
               Have questions or ready to order? We&apos;d love to hear from you.
             </p>
           </motion.div>
@@ -97,7 +98,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -105,7 +106,7 @@ export default function ContactPage() {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto"
           >
-            <h2 className="text-2xl font-bold text-slate-800 mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#171717] mb-8 text-center">
               Contact Information
             </h2>
 
@@ -114,11 +115,11 @@ export default function ContactPage() {
                 const IconComponent = info.icon;
                 return (
                   <div key={info.title} className="flex gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-linear-to-br from-[#D9B26A] to-[#9E7434] flex items-center justify-center shrink-0">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-slate-800 mb-1">
+                      <h3 className="font-semibold text-[#171717] mb-1">
                         {info.title}
                       </h3>
                       {info.href ? (
@@ -126,13 +127,13 @@ export default function ContactPage() {
                           href={info.href}
                           target={info.href.startsWith("http") ? "_blank" : undefined}
                           rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-slate-600 hover:text-green-800 transition-colors"
+                          className="text-[#4B4635] hover:text-[#171717] transition-colors"
                         >
                           {info.details.join(", ")}
                         </a>
                       ) : (
                         info.details.map((detail, idx) => (
-                          <p key={idx} className="text-slate-600">
+                          <p key={idx} className="text-[#4B4635]">
                             {detail}
                           </p>
                         ))
@@ -147,7 +148,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Preview */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             subtitle="Common Questions"
@@ -163,10 +164,10 @@ export default function ContactPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 border border-slate-100"
+                className="bg-white rounded-xl p-6 border border-[#E0D4BF]"
               >
-                <h3 className="font-semibold text-slate-800 mb-2">{faq.q}</h3>
-                <p className="text-slate-600">{faq.a}</p>
+                <h3 className="font-semibold text-[#171717] mb-2">{faq.q}</h3>
+                <p className="text-[#4B4635]">{faq.a}</p>
               </motion.div>
             ))}
           </div>

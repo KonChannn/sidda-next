@@ -87,10 +87,11 @@ export default function ProductsPage() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-32 pb-24 bg-gradient-to-br from-[#153E26] via-[#153E26] to-[#9E7434]">
+      <section className="relative min-h-screen flex items-center pt-32 pb-24 bg-gradient-to-br from-[#F4F3EF] via-[#F4F3EF] to-[#E6D8C2] overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-20 w-72 h-72 bg-teal-500/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-[-4rem] w-80 h-80 bg-[#D9B26A]/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-[-3rem] right-[-4rem] w-[26rem] h-[26rem] bg-[#C19248]/15 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] border border-[#D9B26A]/30 rounded-full" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -100,23 +101,23 @@ export default function ProductsPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge className="bg-[#C19248]/20 text-[#D9B26A] border-[#C19248]/30 mb-6">
+              <Badge className="bg-white/60 text-[#9E7434] border-[#D9B26A]/40 mb-6 tracking-[0.25em] uppercase">
                 Professional Grade
               </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#171717] mb-6 leading-tight tracking-[0.12em] uppercase">
                 SIDDA 5L{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#C19248]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#9E7434]">
                   Dishwashing Liquid
                 </span>
               </h1>
-              <p className="text-xl text-green-100/80 mb-8 leading-relaxed">
+              <p className="text-lg text-[#4B4635] mb-8 leading-relaxed">
                 High-performance cleaning power engineered for demanding
                 environments. Tough on grease, gentle on everything else.
               </p>
               <Link href={createPageUrl("Contact")}>
                 <Button
                   size="lg"
-                  className="bg-[#C19248] text-[#153E26] hover:bg-[#9E7434] px-8 py-6 text-lg font-semibold rounded-xl group"
+                  className="bg-[#171717] text-[#F4F3EF] hover:bg-black px-10 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-black/20 border border-[#D9B26A]/60 group"
                 >
                   Order Now
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -151,7 +152,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             subtitle="Key Benefits"
@@ -167,18 +168,18 @@ export default function ProductsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group p-8 rounded-2xl bg-slate-50 hover:bg-gradient-to-br hover:from-green-50 hover:to-amber-50 transition-all duration-300 border border-slate-100 hover:border-amber-200"
+                className="group p-8 rounded-2xl bg-white hover:bg-[#F4F3EF] transition-all duration-300 border border-[#E0D4BF] hover:border-[#D9B26A]"
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-800 to-green-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 rounded-xl bg-linear-to-br from-[#D9B26A] to-[#9E7434] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   {(() => {
                     const Icon = benefit.icon;
                     return <Icon className="w-7 h-7 text-amber-400" />;
                   })()}
                 </div>
-                <h3 className="text-xl font-semibold text-slate-800 mb-3">
+                <h3 className="text-xl font-semibold text-[#171717] mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-[#4B4635] leading-relaxed">
                   {benefit.description}
                 </p>
               </motion.div>
@@ -188,7 +189,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Product Details */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Specifications */}
@@ -198,24 +199,24 @@ export default function ProductsPage() {
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-3 mb-8">
-                <Package className="w-6 h-6 text-green-800" />
-                <h2 className="text-3xl font-bold text-slate-800">
+                <Package className="w-6 h-6 text-[#9E7434]" />
+                <h2 className="text-3xl font-bold text-[#171717]">
                   Product Specifications
                 </h2>
               </div>
 
-              <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+              <div className="bg-white rounded-2xl shadow-sm border border-[#E0D4BF] overflow-hidden">
                 {SPECIFICATIONS.map((spec, index) => (
                   <div
                     key={spec.label}
                     className={`flex justify-between items-center p-5 ${
                       index !== SPECIFICATIONS.length - 1
-                        ? "border-b border-slate-100"
+                        ? "border-b border-[#E0D4BF]"
                         : ""
                     }`}
                   >
-                    <span className="text-slate-600">{spec.label}</span>
-                    <span className="font-semibold text-slate-800">
+                    <span className="text-[#6B6450]">{spec.label}</span>
+                    <span className="font-semibold text-[#171717]">
                       {spec.value}
                     </span>
                   </div>
@@ -230,33 +231,33 @@ export default function ProductsPage() {
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-3 mb-8">
-                <Sparkles className="w-6 h-6 text-amber-600" />
-                <h2 className="text-3xl font-bold text-slate-800">Ideal For</h2>
+                <Sparkles className="w-6 h-6 text-[#D9B26A]" />
+                <h2 className="text-3xl font-bold text-[#171717]">Ideal For</h2>
               </div>
 
-              <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+              <div className="bg-white rounded-2xl shadow-sm border border-[#E0D4BF] p-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {IDEAL_FOR.map((item) => (
                     <div key={item} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                      <span className="text-slate-700">{item}</span>
+                      <CheckCircle2 className="w-5 h-5 text-[#D9B26A] shrink-0" />
+                      <span className="text-[#4B4635]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-br from-green-800 to-teal-700 rounded-2xl text-white">
+              <div className="mt-8 p-6 bg-[#171717] rounded-2xl text-[#F4F3EF] border border-[#2A261C]">
                 <h3 className="text-xl font-semibold mb-3">
                   Bulk Orders Available
                 </h3>
-                <p className="text-white/80 mb-4">
+                <p className="text-[#C0B9A0] mb-4">
                   Special pricing for large orders. Contact us for wholesale
                   inquiries.
                 </p>
                 <Link href={createPageUrl("Contact")}>
                   <Button
                     variant="secondary"
-                    className="bg-amber-500 text-green-900 hover:bg-amber-400"
+                    className="bg-[#F4F3EF] text-[#171717] hover:bg-white border border-[#D9B26A]"
                   >
                     Request Quote
                   </Button>
@@ -268,7 +269,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Safety Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <SectionHeading
@@ -286,15 +287,15 @@ export default function ProductsPage() {
               {SAFETY_ITEMS.map((item) => (
                 <div
                   key={item.title}
-                  className="text-center p-8 rounded-2xl bg-gradient-to-br from-red-50 to-orange-50 border border-red-100"
+                  className="text-center p-8 rounded-2xl bg-gradient-to-br from-[#FBE9E5] to-[#FDE7CF] border border-[#F4C2A4]"
                 >
-                  <div className="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#F4C2A4] flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl">✗</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-800 mb-2">
+                  <h3 className="text-lg font-semibold text-[#171717] mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-slate-600">{item.desc}</p>
+                  <p className="text-[#4B4635]">{item.desc}</p>
                 </div>
               ))}
             </motion.div>
@@ -303,24 +304,24 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 to-green-900">
+      <section className="py-24 bg-gradient-to-br from-[#171717] via-[#1F1B14] to-[#2B2419]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-[0.12em] uppercase">
               Ready to Upgrade Your Cleaning Routine?
             </h2>
-            <p className="text-xl text-green-100/70 mb-10">
+            <p className="text-xl text-white/75 mb-10">
               Experience the SIDDA difference. Contact us today for orders and
               inquiries.
             </p>
             <Link href={createPageUrl("Contact")}>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-amber-500 to-teal-500 hover:from-amber-600 hover:to-teal-600 text-white px-10 py-6 text-lg font-semibold rounded-xl"
+                className="bg-[#F4F3EF] text-[#171717] hover:bg-white px-10 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-black/30 border border-[#D9B26A]/70"
               >
                 Contact Sales Team
               </Button>
