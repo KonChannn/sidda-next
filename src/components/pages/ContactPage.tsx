@@ -36,16 +36,16 @@ const CONTACT_INFO: {
     title: "Email",
     details: ["Siddaindonesia@gmail.com"],
   },
-  {
-    icon: MapPin,
-    title: "Alamat",
-    details: ["Jalan Bersih No. 123", "Kawasan Industri, NY 10001"],
-  },
-  {
-    icon: Clock,
-    title: "Jam Operasional",
-    details: ["Senin - Jumat: 08.00 - 18.00", "Sabtu: 09.00 - 14.00"],
-  },
+  // {
+  //   icon: MapPin,
+  //   title: "Alamat",
+  //   details: ["Jalan Bersih No. 123", "Kawasan Industri, NY 10001"],
+  // },
+  // {
+  //   icon: Clock,
+  //   title: "Jam Operasional",
+  //   details: ["Senin - Jumat: 08.00 - 18.00", "Sabtu: 09.00 - 14.00"],
+  // },
 ];
 
 const FAQ_ITEMS = [
