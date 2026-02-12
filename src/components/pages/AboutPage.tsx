@@ -102,7 +102,7 @@ export default function AboutPage() {
           </div>
 
           {/* Key Milestones — consistent margin from hero subheader */}
-          <div className="mt-24 max-w-4xl mx-auto">
+          {/* <div className="mt-24 max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ export default function AboutPage() {
               </motion.div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

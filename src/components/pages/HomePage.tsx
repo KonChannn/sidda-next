@@ -295,14 +295,14 @@ export default function HomePage() {
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-14 h-14 rounded-full bg-[#171717] flex items-center justify-center text-white font-bold text-xl">
-                MR
-              </div>
+                KJ
+              </div>  
               <div className="text-left">
                 <div className="font-semibold text-[#171717]">
-                  Marco Rodriguez
+                  Kevin Jonathan 
                 </div>
                 <div className="text-[#6B6450]">
-                  Kepala Koki, The Grand Kitchen
+                  Owner, Laitea
                 </div>
               </div>
             </div>
