@@ -21,9 +21,9 @@ const CONTACT_INFO: {
 }[] = [
   {
     icon: Phone,
-    title: "Telepon",
-    details: ["08778729814"],
-    href: "tel:08778729814",
+    title: "WhatsApp",
+    details: ["087787239814"],
+    href: "https://wa.me/+6287787239814",
   },
   {
     icon: Instagram,
