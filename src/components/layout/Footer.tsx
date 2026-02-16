@@ -62,16 +62,16 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-[#C0B9A0]">
                 <Phone className="w-5 h-5 text-[#C19248] shrink-0" />
                 <a
-                  href="tel:08778729814"
+                  href="https://wa.me/+6287787239814"
                   className="hover:text-white transition-colors"
                 >
-                  08778729814
+                  087787239814
                 </a>
               </li>
               <li className="flex items-center gap-3 text-[#C0B9A0]">
                 <Instagram className="w-5 h-5 text-[#C19248] shrink-0" />
                 <a
-                  href="https://instagram.com/sidda.id"
+                  href="https://instagram.com/sidda.id/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
