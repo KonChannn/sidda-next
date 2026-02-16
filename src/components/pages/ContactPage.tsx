@@ -29,7 +29,7 @@ const CONTACT_INFO: {
     icon: Instagram,
     title: "Instagram",
     details: ["@sidda.id"],
-    href: "https://instagram.com/sidda.id",
+    href: "https://instagram.com/sidda.id/",
   },
   {
     icon: Mail,
