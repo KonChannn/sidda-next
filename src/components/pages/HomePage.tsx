@@ -11,6 +11,9 @@ import {
   Shield,
   Zap,
   Clock,
+  Truck,
+  Wind,
+  Wallet,
   Heart,
   ArrowRight,
   Star,
@@ -28,36 +31,36 @@ const FEATURES = [
       "Mengangkat minyak, lemak, dan bau amis hanya dalam satu kali cuci. Tidak perlu menggosok berulang-ulang.",
   },
   {
-    icon: Leaf,
-    title: "Formula Ramah Lingkungan",
+    icon: Wind,
+    title: "Aroma Segar Tahan Lama",
     description:
-      "Bahan yang mudah terurai dan aman bagi lingkungan tanpa mengorbankan kualitas pencucian.",
+      "Membersihkan sambil meninggalkan aroma segar yang bertahan lama di setiap peralatan makan.",
   },
   {
-    icon: Shield,
-    title: "Aman untuk Kulit",
+    icon: Truck,
+    title: "Sistem Delivery Terpercaya",
     description:
-      "Tanpa paraben, fosfat, atau bahan kimia keras. Lembut untuk tangan meski digunakan sepanjang hari.",
+      "Pengiriman cepat, terjadwal, dan konsisten sehingga stok cairan pencuci Anda selalu aman.",
   },
   {
-    icon: Clock,
-    title: "Hemat Waktu & Tenaga",
+    icon: Wallet,
+    title: "Harga Terjangkau untuk Bisnis",
     description:
-      "Menghemat waktu, air, dan tenaga di jam-jam sibuk dengan formula yang bekerja cepat.",
+      "Kualitas profesional dengan harga kompetitif sehingga biaya operasional tetap efisien.",
   },
 ];
 
 const STATS = [
   { value: "5L", label: "Ukuran Jerigen" },
-  { value: "100%", label: "Biodegradabel" },
   { value: "1", label: "Kali Cuci" },
-  { value: "0", label: "Bahan Kimia Keras" },
+  { value: "100%", label: "Bau amis hilang" },
+  { value: "100%", label: "Lemak bandel hilang" },
 ];
 
 const FLAGSHIP_BULLETS = [
   "Langsung melarutkan minyak dan lemak membandel",
   "Menghilangkan bau amis dan bau tak sedap",
-  "Biodegradabel dan ramah lingkungan",
+  "Sistem delivery & refill praktis",
   "Formula telah diuji secara dermatologis",
 ];
 
@@ -92,7 +95,7 @@ export default function HomePage() {
           >
             Daya Bersih,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9B26A] to-[#9E7434]">
-              Formula Aman
+              Aroma Segar, dan Sistem Delivery
             </span>
           </motion.h1>
 
@@ -102,8 +105,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-[#4B4635] max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Cairan pencuci piring berkinerja tinggi yang sangat ampuh mengangkat
-            lemak, tetap lembut di kulit, dan lebih bersahabat bagi lingkungan.
+            Cairan pencuci piring dengan daya bersih maksimal, aroma segar tahan lama, dan sistem delivery praktis untuk bisnis Anda.
           </motion.p>
 
           <motion.div
@@ -180,8 +182,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             subtitle="Mengapa Memilih SIDDA"
-            title="Performa Tinggi, Tetap Aman"
-            description="Diformulasikan untuk profesional yang menuntut kekuatan bersih maksimal sekaligus tanggung jawab terhadap kesehatan dan lingkungan."
+            title="Performa Tinggi, Bisa Refill & Delivery, Harga Terjangkau"
+            description="Diformulasikan untuk profesional yang menuntut kekuatan bersih maksimal sekaligus tanggung jawab terhadap kesehatan"
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -289,9 +291,10 @@ export default function HomePage() {
               ))}
             </div>
             <blockquote className="text-2xl md:text-3xl font-medium text-[#3E3A2C] mb-8 leading-relaxed">
-              &quot;SIDDA benar-benar mengubah cara kerja dapur kami. Satu kali
-              cuci sudah cukup, dan staf kami menyukai betapa lembutnya di
-              tangan meski dipakai sepanjang shift.&quot;
+              &quot;SIDDA benar-benar bikin kerjaan dapur jadi lebih gampang. Harganya juga terjangkau, 
+              tapi kualitasnya tetap oke, sekali cuci langsung bersih.  Kalau sudah habis juga nggak ribet, 
+              tinggal refill dan bisa delivery langsung ke tempat. Jadi lebih hemat, praktis, dan nggak 
+              perlu khawatir kehabisan.&quot;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-14 h-14 rounded-full bg-[#171717] flex items-center justify-center text-white font-bold text-xl">

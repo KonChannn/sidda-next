@@ -32,6 +32,12 @@ const CONTACT_INFO: {
     href: "https://instagram.com/sidda.id/",
   },
   {
+    icon: MapPin,
+    title: "Tokopedia",
+    details: ["Tokopedia"],
+    href: "https://tk.tokopedia.com/ZSmChV2TG/",
+  },
+  {
     icon: Mail,
     title: "Email",
     details: ["Siddaindonesia@gmail.com"],
@@ -148,7 +154,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Preview */}
-      <section className="py-24 bg-[#F4F3EF]">
+      {/* <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             subtitle="Pertanyaan Umum"
@@ -172,7 +178,7 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

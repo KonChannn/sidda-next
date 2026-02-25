@@ -7,12 +7,12 @@ import { createPageUrl } from "@/lib/utils";
 import { motion } from "framer-motion";
 import {
   CheckCircle2,
-  Leaf,
-  Shield,
+  Wind,
+  Truck,
   Zap,
   Clock,
   Sparkles,
-  Beaker,
+  Wallet,
   Package,
   ArrowRight,
 } from "lucide-react";
@@ -34,16 +34,16 @@ const BENEFITS = [
       "Tanpa perlu menggosok berulang—menghemat waktu berharga di jam-jam sibuk.",
   },
   {
-    icon: Leaf,
-    title: "Biodegradabel",
+    icon: Wind,
+    title: "Aroma Segar Tahan Lama",
     description:
-      "Formula yang ramah lingkungan dan mudah terurai secara alami.",
+      "Membersihkan sambil meninggalkan aroma segar yang bertahan lama di setiap peralatan makan.",
   },
   {
-    icon: Shield,
-    title: "Aman untuk Kulit",
+    icon: Truck,
+    title: "Sistem Delivery Terpercaya",
     description:
-      "Cukup lembut untuk digunakan sepanjang hari tanpa membuat kulit kering atau iritasi.",
+      "Pengiriman cepat, terjadwal, dan konsisten sehingga stok cairan pencuci Anda selalu aman.",
   },
   {
     icon: Sparkles,
@@ -52,10 +52,10 @@ const BENEFITS = [
       "Meninggalkan piring bersih berkilau tanpa bekas sabun atau lapisan buram.",
   },
   {
-    icon: Beaker,
-    title: "Tanpa Bahan Kimia Keras",
+    icon: Wallet,
+    title: "Harga Terjangkau untuk Bisnis",
     description:
-      "Bebas paraben, fosfat, dan zat iritan sintetis lainnya.",
+      "Kualitas profesional dengan harga kompetitif sehingga biaya operasional tetap efisien.",
   },
 ];
 
@@ -64,8 +64,7 @@ const SPECIFICATIONS = [
   { label: "Kemasan", value: "Jerigen HDPE" },
   { label: "Tingkat pH", value: "Netral (6,5–7,5)" },
   { label: "Aroma", value: "Jeruk Segar" },
-  { label: "Masa Simpan", value: "24 Bulan" },
-  { label: "Sertifikasi", value: "Eco-Certified" },
+  // { label: "Sertifikasi", value: "Eco-Certified" },
 ];
 
 const IDEAL_FOR = [
@@ -113,7 +112,7 @@ export default function ProductsPage() {
               <p className="text-lg text-[#4B4635] mb-8 leading-relaxed">
                 Daya bersih tinggi yang dirancang untuk kebutuhan dapur dengan
                 beban kerja berat. Sangat ampuh melawan lemak, tetap lembut
-                untuk yang lainnya.
+                ditangan.
               </p>
               <Link href={createPageUrl("Contact")}>
                 <Button
@@ -272,7 +271,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Safety Section */}
-      <section className="py-24 bg-[#F4F3EF]">
+      {/* <section className="py-24 bg-[#F4F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
           <SectionHeading
@@ -304,7 +303,7 @@ export default function ProductsPage() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-24 bg-gradient-to-br from-[#171717] via-[#1F1B14] to-[#2B2419]">
