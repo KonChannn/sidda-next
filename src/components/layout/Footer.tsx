@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, Instagram } from "lucide-react";
+import { Phone, Mail, Instagram, MapPin } from "lucide-react";
 import { createPageUrl } from "@/lib/utils";
 import type { PageName } from "@/lib/utils";
 
@@ -86,6 +86,17 @@ export default function Footer() {
                   className="hover:text-white transition-colors"
                 >
                   Siddaindonesia@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-[#C0B9A0]">
+                <MapPin className="w-5 h-5 text-[#C19248] shrink-0" />
+                <a
+                  href="https://tk.tokopedia.com/ZSmChV2TG/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Tokopedia
                 </a>
               </li>
             </ul>
