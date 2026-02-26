@@ -20,12 +20,12 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import type { LucideIcon } from "lucide-react";
 
 const VALUES: { icon: LucideIcon; title: string; description: string }[] = [
-  {
-    icon: Shield,
-    title: "Keamanan Utama",
-    description:
-      "Setiap formula yang kami kembangkan mengutamakan kesehatan dan keselamatan pengguna sekaligus lingkungan.",
-  },
+  // {
+  //   icon: Shield,
+  //   title: "Keamanan Utama",
+  //   description:
+  //     "Setiap formula yang kami kembangkan mengutamakan kesehatan dan keselamatan pengguna sekaligus lingkungan.",
+  // },
   {
     icon: Lightbulb,
     title: "Inovasi",
@@ -36,13 +36,13 @@ const VALUES: { icon: LucideIcon; title: string; description: string }[] = [
     icon: Leaf,
     title: "Keberlanjutan",
     description:
-      "Komitmen kami pada bahan-bahan biodegradabel adalah wujud tanggung jawab kami terhadap bumi.",
+      "Melalui sistem refill, Anda tidak perlu terus-menerus membuang botol plastik sekali pakai—lebih hemat sampah, lebih ramah bumi.",
   },
   {
     icon: Users,
     title: "Fokus pada Pelanggan",
     description:
-      "Kami mendengarkan kebutuhan profesional dan rumah tangga untuk menciptakan produk yang benar-benar menjawab masalah mereka.",
+      "Kami mendengarkan kebutuhan profesional untuk menciptakan produk yang benar-benar menjawab masalah mereka.",
   },
 ];
 
@@ -169,15 +169,18 @@ export default function AboutPage() {
                 Kisah Kami
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#171717] mb-6 tracking-[0.08em] uppercase">
-                Berawal dari Satu Pertanyaan Sederhana
+                SIDDA berangkat dari pengalaman kami sebagai owner restoran. 
               </h2>
               <div className="space-y-4 text-lg text-[#4B4635] leading-relaxed">
                 <p>
-                  Mengapa dapur profesional harus memilih antara hasil bersih
-                  yang maksimal atau keselamatan tim mereka? Pertanyaan inilah
-                  yang memicu lahirnya SIDDA.
+                  Kami merasa bahwa sabun cuci piring yang beredar dipasaran tidak sesuai kebutuhan kami. 
+                  Produk yang ampuh membersihkan minyak seringkali meninggalkan bekas sabun dan makanan atau sulit larut. 
+                  Sedangkan produk yang tidak meninggalkan bekas dan sulit larut kurang baik dalam mengangkat minyak. 
+                  Maka dari itu kami mengembangkan sabun cuci piring yang sesuai dengan kebutuhan restoran. 
+                  Setelah riset dan pengembangan produk hingga ke Jepang, kami menemukan formulasi sabun yang 
+                  dapat mengangkat minyak dan bekas makanan tanpa meninggalkan bekas sabun pada alat makan.
                 </p>
-                <p>
+                {/* <p>
                   Kami melihat banyak pekerja dapur bergulat dengan bahan kimia
                   keras yang membuat kulit kering, restoran yang kesulitan
                   dengan produk yang tak mampu menaklukkan lemak berat, dan
@@ -190,7 +193,7 @@ export default function AboutPage() {
                   mengembangkan formula yang memberikan daya bersih setara
                   profesional, namun tetap lembut untuk penggunaan sepanjang
                   hari.
-                </p>
+                </p> */}
               </div>
             </motion.div>
 
@@ -240,9 +243,7 @@ export default function AboutPage() {
                 Misi Kami
               </h3>
               <p className="text-lg text-[#4B4635] leading-relaxed">
-                Menyediakan solusi kebersihan berkinerja tinggi yang melindungi
-                manusia dan bumi, sehingga standar kebersihan profesional dapat
-                diakses dan berkelanjutan bagi semua.
+                Menghadirkan sabun cuci piring dengan daya bersih maksimal, aroma tahan lama, sistem refill dan delivery yang praktis, serta harga terjangkau untuk semua.
               </p>
             </motion.div>
 
@@ -260,9 +261,7 @@ export default function AboutPage() {
                 Visi Kami
               </h3>
               <p className="text-lg text-[#4B4635] leading-relaxed">
-                Menjadi pemimpin global dalam produk pembersih ramah
-                lingkungan, dan menjadi standar baru dalam hal keamanan,
-                efektivitas, serta tanggung jawab terhadap lingkungan.
+                Menjadi pilihan utama sabun cuci piring yang efektif, wangi, praktis, dan ekonomis di pasar.
               </p>
             </motion.div>
           </div>
@@ -278,7 +277,7 @@ export default function AboutPage() {
             description="Prinsip-prinsip ini membimbing setiap keputusan dan setiap produk yang kami hadirkan."
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
             {VALUES.map((value, index) => {
               const IconComponent = value.icon;
               return (
