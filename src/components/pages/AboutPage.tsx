@@ -20,12 +20,12 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import type { LucideIcon } from "lucide-react";
 
 const VALUES: { icon: LucideIcon; title: string; description: string }[] = [
-  // {
-  //   icon: Shield,
-  //   title: "Keamanan Utama",
-  //   description:
-  //     "Setiap formula yang kami kembangkan mengutamakan kesehatan dan keselamatan pengguna sekaligus lingkungan.",
-  // },
+  {
+    icon: Shield,
+    title: "Keamanan Utama",
+    description:
+      "Setiap formula yang kami kembangkan mengutamakan kesehatan dan keselamatan pengguna.",
+  },
   {
     icon: Lightbulb,
     title: "Inovasi",
@@ -277,7 +277,7 @@ export default function AboutPage() {
             description="Prinsip-prinsip ini membimbing setiap keputusan dan setiap produk yang kami hadirkan."
           />
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {VALUES.map((value, index) => {
               const IconComponent = value.icon;
               return (

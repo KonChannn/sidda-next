@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, Instagram, MapPin } from "lucide-react";
+import { Phone, Mail, Instagram, ShoppingBag } from "lucide-react";
 import { createPageUrl } from "@/lib/utils";
 import type { PageName } from "@/lib/utils";
 
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="https://wa.me/+6287787239814"
                   className="hover:text-white transition-colors"
                 >
-                  087787239814
+                  089506349866
                 </a>
               </li>
               <li className="flex items-center gap-3 text-[#C0B9A0]">
@@ -89,14 +89,25 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3 text-[#C0B9A0]">
-                <MapPin className="w-5 h-5 text-[#C19248] shrink-0" />
+                <ShoppingBag className="w-5 h-5 text-[#C19248] shrink-0" />
                 <a
-                  href="https://tk.tokopedia.com/ZSmChV2TG/"
+                  href="https://tk.tokopedia.com/ZSmpmWnyo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
                   Tokopedia
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-[#C0B9A0]">
+                <ShoppingBag className="w-5 h-5 text-[#C19248] shrink-0" />
+                <a
+                  href="https://shopee.co.id/sidda_id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Shopee
                 </a>
               </li>
             </ul>

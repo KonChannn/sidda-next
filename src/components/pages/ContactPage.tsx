@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   Phone,
   Mail,
-  MapPin,
+  ShoppingBasket,
   Clock,
   Instagram,
 } from "lucide-react";
@@ -22,8 +22,8 @@ const CONTACT_INFO: {
   {
     icon: Phone,
     title: "WhatsApp",
-    details: ["087787239814"],
-    href: "https://wa.me/+6287787239814",
+    details: ["089506349866"],
+    href: "https://wa.me/+6289506349866",
   },
   {
     icon: Instagram,
@@ -32,10 +32,16 @@ const CONTACT_INFO: {
     href: "https://instagram.com/sidda.id/",
   },
   {
-    icon: MapPin,
+    icon: ShoppingBasket,
     title: "Tokopedia",
     details: ["Tokopedia"],
-    href: "https://tk.tokopedia.com/ZSmChV2TG/",
+    href: "https://tk.tokopedia.com/ZSmpmWnyo/",
+  },
+  {
+    icon: ShoppingBasket,
+    title: "Shopee",
+    details: ["Shopee"],
+    href: "https://shopee.co.id/sidda_id",
   },
   {
     icon: Mail,
