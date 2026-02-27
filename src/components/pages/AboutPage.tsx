@@ -214,7 +214,7 @@ export default function AboutPage() {
               </div>
               <div className="absolute -bottom-6 -left-6 bg-[#F4F3EF] rounded-2xl shadow-xl p-6 max-w-xs border border-[#E0D4BF]">
                 <div className="text-4xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#D9B26A] to-[#9E7434]">
-                  1000+
+                  Trusted
                 </div>
                 <div className="text-[#6B6450]">
                   Professional kitchens trust SIDDA
