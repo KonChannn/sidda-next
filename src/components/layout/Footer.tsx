@@ -110,6 +110,17 @@ export default function Footer() {
                   Shopee
                 </a>
               </li>
+              <li className="flex items-center gap-3 text-[#C0B9A0]">
+                <ShoppingBag className="w-5 h-5 text-[#C19248] shrink-0" />
+                <a
+                  href="https://vt.tokopedia.com/t/ZS9ebE6wKQcqj-szRSr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Tiktok
+                </a>
+              </li>
             </ul>
           </div>
 

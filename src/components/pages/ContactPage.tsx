@@ -44,6 +44,12 @@ const CONTACT_INFO: {
     href: "https://shopee.co.id/sidda_id",
   },
   {
+    icon: ShoppingBasket,
+    title: "TikTok",
+    details: ["TokTok"],
+    href: "https://vt.tokopedia.com/t/ZS9ebE6wKQcqj-szRSr/",
+  },
+  {
     icon: Mail,
     title: "Email",
     details: ["Siddaindonesia@gmail.com"],

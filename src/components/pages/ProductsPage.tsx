@@ -136,7 +136,7 @@ export default function ProductsPage() {
                 {/* <div className="relative bg-gradient-to-br from-white/15 to-white/5 rounded-3xl p-10 backdrop-blur-sm border border-white/20"> */}
                   <div className="aspect-square rounded-2xl overflow-hidden flex items-center justify-center">
                     <Image
-                      src="/Label.png"
+                      src="/Label.jpeg"
                       alt="SIDDA Lemon Dishwashing Liquid label - Strong against grease, eliminates fishy odors, professional grade"
                       width={500}
                       height={500}
